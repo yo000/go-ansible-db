@@ -4,7 +4,7 @@ GIT_COMMIT:=$(shell git describe --dirty --always)
 GIT_BRANCH:=$(shell git rev-parse --abbrev-ref HEAD -- | head -1)
 BUILD_USER:=$(shell whoami)
 BUILD_DATE:=$(shell date +"%Y-%m-%d")
-PROJECT:="github.com/greenpau/go-ansible-db"
+PROJECT:="github.com/yo000/go-ansible-db"
 BINARY:="go-ansible-db-client"
 VERBOSE:=-v
 ifdef TEST
@@ -69,8 +69,8 @@ dep:
 	@echo "Making dependencies check ..."
 	@go get -u golang.org/x/lint/golint
 	@go get -u golang.org/x/tools/cmd/godoc
-	@go get -u github.com/greenpau/versioned/cmd/versioned
-	@go get -u github.com/greenpau/gorpm/cmd/gorpm
+	@go get -u github.com/yo000/versioned/cmd/versioned
+	@go get -u github.com/yo000/gorpm/cmd/gorpm
 	@pip3 install yamllint --user
 	@pip3 install yq --user
 

@@ -1,4 +1,4 @@
-// Copyright 2018 Paul Greenberg (greenpau@outlook.com)
+// Copyright 2018 Paul Greenberg (yo000@outlook.com)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/greenpau/go-ansible-db/pkg/db"
+	"github.com/yo000/go-ansible-db/pkg/db"
 	log "github.com/sirupsen/logrus"
 	"os"
 )
@@ -25,7 +25,7 @@ import (
 var (
 	appName        = "go-ansible-db-client"
 	appVersion     = "[untracked]"
-	appDocs        = "https://github.com/greenpau/go-ansible-db/"
+	appDocs        = "https://github.com/yo000/go-ansible-db/"
 	appDescription = "Ansible DB (Inventory and Vault) client"
 	gitBranch      string
 	gitCommit      string
