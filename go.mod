@@ -1,4 +1,4 @@
-module github.com/greenpau/go-ansible-db
+module github.com/yo000/go-ansible-db
 
 go 1.14
 
