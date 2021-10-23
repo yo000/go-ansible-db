@@ -298,7 +298,7 @@ func (inv *Inventory) AddHost(s, groupName string) error {
 	if _, exists := inv.GroupsRef[groupName]; !exists {
 		return fmt.Errorf("the group %s for host %s does not exist", groupName, s)
 	}
-	n := strings.Split(s, " ")[0]
+	n := strings.Fields(s)[0]
 	kv, err := getKeyValuePairs(s[len(n):])
 	if err != nil {
 		return err
