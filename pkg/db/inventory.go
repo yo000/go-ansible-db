@@ -303,11 +303,6 @@ func (inv *Inventory) AddHost(s, groupName string) error {
 	if err != nil {
 		return err
 	}
-	if g, exists := inv.HostsRef[n]; exists {
-		if g != groupName {
-			return fmt.Errorf("host %s exist in multiple groups: %s, %s", n, g, groupName)
-		}
-	}
 	h := &InventoryHost{
 		Name:      n,
 		Parent:    groupName,
